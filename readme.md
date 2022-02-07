@@ -1,6 +1,8 @@
 # sar_dataset
 Dataset composed of 105 SAR images of roads and their corresponding road network graphs. The dataset was constructed for a data science project at CentraleSupélec [1]. The roads present in the dataset were mainly taken from large roads in the countryside, where the road is clearly visible in SAR imagery.
 
+<img src="/images/region_102_sat.png" width="300" height="300"> <img src="/images/region_102_gt.png" width="300" height="300">
+
 ### SAR images
 The images were acquired through GoogleEarthEngine from the Sentinel-1 satellites. The **satellite acquisition characteristics** are listed below:
 - Processing level: Level 1 GRD (Ground Range Deteced)
