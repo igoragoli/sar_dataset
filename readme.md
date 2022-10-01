@@ -1,10 +1,13 @@
 # sar_dataset
-Dataset composed of 105 SAR images of roads and their corresponding road network graphs. The dataset was constructed for a data science project at CentraleSupélec [1]. The roads present in the dataset were mainly taken from large roads in the countryside, where the road is clearly visible in SAR imagery.
+Dataset composed of 105 SAR images of roads and their corresponding road network graphs. The dataset was constructed for a data science project at CentraleSupélec [1]. The project is a second year engineering school (equivalent to senior year of college in the US system / 1st year of Master in the UK system) project of CentraleSupelec engineering school (Paris-Saclay University) in France.
+
+## Dataset Characteristics
+
+### SAR images
 
 <img src="/images/region_102_sat.png" width="300" height="300"> <img src="/images/region_102_gt.png" width="300" height="300">
 
-### SAR images
-The images were acquired through GoogleEarthEngine from the Sentinel-1 satellites. The **satellite acquisition characteristics** are listed below:
+The roads present in the dataset were mainly taken from large roads in the countryside, where the road is clearly visible in SAR imagery. The images were acquired through GoogleEarthEngine from the Sentinel-1 satellites. The **satellite acquisition characteristics** are listed below:
 - Processing level: Level 1 GRD (Ground Range Deteced)
 - Transmitter-receiver polarisation: VV (Vertical transmit, Vertical receive)
 - Instrument mode: IW (Interferometric Wide (IW) swath)
@@ -20,6 +23,6 @@ The ground-truth graph images are named `region_x_gt.png`. They can be easily pr
 The ground-truth graph information interpretable by Sat2Graph [2] is stored as `region_x_refine_gt_graph_samplepoints.json`, `region_x_refine_gt_graph.p` and `region_x_graph_gt.pickle`.
 
 ## References
-[1] Gonzales, C., Hubert, M., Oliveira, I., Strelow, L., & Navas, L. V. (2022, January). Détection et reconstruction de routes à partir des Images SAR. CentraleSupélec Pôle Projet Data Science. [Access the report.](https://drive.google.com/file/d/15ye9lFsMioFfnzUxzQSnxEJdEb6fCxaF/view?usp=sharing)
+[1] Gonzales, C., Hubert, M., Oliveira, I., Strelow, L., & Navas, L. V. (2022, January). Détection et reconstruction de routes à partir des Images SAR. CentraleSupélec Pôle Projet Data Science. [Read the Article.](https://drive.google.com/file/d/15ye9lFsMioFfnzUxzQSnxEJdEb6fCxaF/view?usp=sharing)
 
 [2] He, S., Bastani, F., Jagwani, S., Alizadeh, M., Balakrishnan, H., Chawla, S., Elshrif, M. M., Madden, S., &amp; Sadeghi, M. A. (2020). Sat2Graph: Road graph extraction through graph-tensor encoding. Computer Vision – ECCV 2020, 51–67. https://doi.org/10.1007/978-3-030-58586-0_4 
